@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
                 thana.setText(sthaba);
 
             } else if (possion >1) {
-                thana.setText(sthaba+"(OS)");
+                thana.setText(sthaba+"(OC)");
 
             } else {
 
