@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/itemlayout"
+        android:background="@drawable/backinclude"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:weightSum="3"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="7dp"
+            android:id="@+id/imageview"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/police"
+                android:scaleType="centerCrop"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/dial"
+            android:layout_marginLeft="85dp"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/thana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thana Name"
+                android:textStyle="bold"
+                android:textColor="#4E4E4E"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/city"
+                android:textColor="#898989"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City name" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dial"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:rotation="-7"
+            android:rotationX="-2"
+            android:src="@drawable/diallogo" />
+
+
+
+
+
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>
